@@ -1,0 +1,151 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>Academic Profile</title>
+<style>
+/* Modern Reset and Background */
+body { 
+  margin: 0; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  color: #333;
+} 
+
+/* Navigation Bar */
+.topnav { 
+  overflow: hidden; 
+  background-color: #2c3e50; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+} 
+.topnav a { 
+  float: left; 
+  color: #f2f2f2; 
+  text-align: center; 
+  padding: 16px 20px; 
+  text-decoration: none; 
+  font-size: 17px; 
+  transition: 0.3s;
+} 
+.topnav a:hover { 
+  background-color: #34495e; 
+  color: #ffffff; 
+} 
+.topnav a.active { 
+  background-color: #27ae60; 
+  color: white; 
+} 
+
+/* Content Container */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+h2, h3 {
+  color: #2c3e50;
+  border-bottom: 2px solid #27ae60;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Professional Table Styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 25px;
+  background-color: #fff;
+}
+th {
+  background-color: #f8f9fa;
+  color: #2c3e50;
+  font-weight: 600;
+  border-bottom: 2px solid #dee2e6;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Achievement List */
+.achievements-list {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+.achievements-list li {
+  margin-bottom: 10px;
+  list-style-type: "✔  ";
+  color: #444;
+}
+
+/* Link Styling */
+.btn-site {
+  text-decoration: none;
+  color: #27ae60;
+  font-weight: bold;
+}
+.btn-site:hover {
+  text-decoration: underline;
+}
+</style> 
+</head> 
+<body> 
+
+<div class="topnav"> 
+  <a class="active" href="#Academic Profile">Academic Profile</a> 
+</div> 
+
+<div class="container"> 
+  <h2>Education & Qualifications</h2>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Sr. No.</th>
+        <th>Qualification</th>
+        <th>Institute</th>
+        <th>Marks</th>
+        <th>Website</th> 
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01</td>
+        <td><strong>SSC</strong></td>
+        <td>Sangola Vidyamandir Prashala, Sangola</td>
+        <td>76.20%</td>
+        <td><a href="http://www.stspm.org" class="btn-site" target="_blank">Visit</a></td>
+      </tr>
+      <tr>
+        <td>02</td>
+        <td><strong>Diploma in CSE</strong></td>
+        <td>Fabtech Technical Campus, Sangola</td>
+        <td>83.18%</td>
+        <td><a href="https://www.ftccoe.ac.in" class="btn-site" target="_blank">Visit</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br><br>
+  
+  <h3>Key Achievements</h3>
+  <ul class="achievements-list">
+    <li>Bhagavad Gita Scholarships Exam</li>
+    <li>Fort Building Competition</li>
+    <li>General Knowledge Competition</li>
+    <li>Science Olympiad Exam</li>
+  </ul>
+</div> 
+
+</body> 
+</html>
