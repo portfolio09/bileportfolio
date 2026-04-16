@@ -3,104 +3,144 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Professional Website</title>
+<title>Anish Bile | Portfolio</title>
 
 <style>
+/* Root settings for better scaling */
+* {
+    box-sizing: border-box;
+}
 
-/* Background */
-body{
-    margin:0;
+body {
+    margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    /* Use background-attachment: fixed to keep image steady */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url("https://images.unsplash.com/photo-1498050108023-c5249f4df085");
     background-size: cover;
     background-position: center;
-    height:100vh;
-    color:white;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Navigation bar */
-.topnav{
-    background-color: rgba(0,0,0,0.8);
-    overflow:hidden;
-    display:flex;
-    justify-content:center;
+/* Navigation bar - Responsive Flexbox */
+.topnav {
+    background-color: rgba(0,0,0,0.9);
+    display: flex;
+    flex-wrap: wrap; /* Allows links to wrap on small screens */
+    justify-content: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.topnav a{
-    color:white;
-    padding:14px 20px;
-    text-decoration:none;
-    font-size:18px;
-    transition:0.3s;
+.topnav a {
+    color: white;
+    padding: 12px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
-.topnav a:hover{
-    background:#04AA6D;
-    border-radius:5px;
+.topnav a:hover {
+    color: #04AA6D;
 }
 
 /* Main content */
-.container{
-    text-align:center;
-    margin-top:120px;
+.container {
+    text-align: center;
+    padding: 20px;
+    margin: auto; /* Centers vertically and horizontally */
+    max-width: 900px;
 }
 
-.container h1{
-    font-size:50px;
-    margin-bottom:10px;
+.container h1 {
+    font-size: clamp(2rem, 8vw, 4rem); /* Responsive font: min, preferred, max */
+    margin-bottom: 10px;
 }
 
-.container p{
-    font-size:20px;
-    opacity:0.9;
+.container p {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    opacity: 0.9;
 }
 
-/* Menu links */
-.menu{
-    margin-top:40px;
+/* Menu links - Flex Grid */
+.menu {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
-.menu a{
-    display:inline-block;
-    margin:10px;
-    padding:12px 25px;
-    background:#04AA6D;
-    color:white;
-    text-decoration:none;
-    border-radius:6px;
-    font-size:18px;
-    transition:0.3s;
+.menu a {
+    padding: 12px 30px;
+    background: #04AA6D;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px; /* Modern rounded look */
+    font-size: 18px;
+    transition: 0.3s transform ease;
+    min-width: 200px; /* Ensures buttons look uniform */
 }
 
-.menu a:hover{
-    background:#028a57;
+.menu a:hover {
+    background: #028a57;
+    transform: translateY(-3px);
 }
 
+/* --- RESPONSIVE DESIGN (Media Queries) --- */
+
+/* Mobile Phones */
+@media screen and (max-width: 600px) {
+    .topnav a {
+        font-size: 14px;
+        padding: 10px 8px;
+    }
+    
+    .container {
+        margin-top: 60px;
+    }
+
+    .menu a {
+        width: 100%; /* Buttons stack vertically on tiny screens */
+        margin: 5px 0;
+    }
+}
+
+/* Tablets */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .container h1 {
+        font-size: 3.5rem;
+    }
+}
 </style>
 </head>
 
 <body>
 
-<div class="topnav">
-<a href="#">Home</a>
-<a href="D:\Anish Bile\exp33.html">Academic Profile</a>
-<a href="D:\Anish Bile\exp35.html">Technical Profile</a>
-<a href="D:\Anish Bile\exp37.html">Personal Information</a>
-<a href="D:\Anish Bile\exp38.html">About Us</a>
-</div>
+<nav class="topnav">
+    <a href="#">Home</a>
+    <a href="D:\Anish Bile\academic profile.html">academic profile</a>
+    <a href="D:\Anish Bile\technical profile.html">technical profile</a>
+    <a href="D:\Anish Bile\personal info.html">personal info</a>
+    <a href="D:\Anish Bile\contant.html">contact</a>
+</nav>
 
 <div class="container">
-<h1> Hello, I'm Anish Bile</h1>
-<p> AI & Software Engineer </p>
+    <h1>Hello, I'm Anish Bile</h1>
+    <p> web developer</p>
 
-<div class="menu">
-<a href="D:\Anish Bile\exp33.html">Academic Profile</a>
-<a href="D:\Anish Bile\exp35.html">Technical Profile</a>
-<a href="D:\Anish Bile\exp37.html">Personal Info</a>
-<a href="D:\Anish Bile\exp38.html">About Me</a>
-</div>
-
+    <div class="menu">
+        <a href="D:\Anish Bile\academic profile.html">academic profile</a>
+        <a href="D:\Anish Bile\technical profile.html">technical profile</a>
+        <a href="D:\Anish Bile\personal info.html">personal info</a>
+        <a href="D:\Anish Bile\contant.html">contant</a>
+    </div>
 </div>
 
 </body>
